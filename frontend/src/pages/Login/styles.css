@@ -1,0 +1,58 @@
+.login {
+	display: flex;
+	justify-content: center;
+	/* width: 45% !important; */
+	padding: 2rem 3rem !important; /* curse of using bootstrap */
+	margin-bottom: 1rem !important;
+}
+.form-container {
+	display: flex;
+	justify-content: center;
+	box-shadow: 10px 10px rgb(0,0,0,0.05);
+	border-radius: 50px;
+	background-color: #ffffff;
+	height: clamp(350px, 40vh, 450px);
+	width: clamp(400px, 70vw, 500px);
+	padding: 1rem;
+}
+.form-container > svg {
+	width: 50%;
+}
+.form-field {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login .form-field input, .login .form-field textarea {
+	width: 100%;
+	height: 45px;
+	border-radius: 40px;
+	background-color: #E1E1E1;
+	border: none;
+	text-align: left;
+	padding: 1rem 1.5rem;
+}
+.login .form-field textarea {
+	height: initial;
+	resize: none;
+}
+.login .form-field input:focus, .login .form-field textarea:focus {
+	background-color: #E1E1E1;
+}
+
+.login .form-field input:focus-visible, .login .form-field textarea:focus-visible {
+	outline: none;
+}
+
+.login-btn {
+	width: 100px;
+	height: 45px;
+	background-color: rgba(79, 85, 87, 0.8);
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.login {
+		padding: 2rem 1rem !important; /* curse of using bootstrap */
+	}
+}

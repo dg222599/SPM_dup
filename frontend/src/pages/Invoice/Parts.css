@@ -1,0 +1,78 @@
+.modalBackgroundP {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainerP {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    overflow-y: scroll;
+  }
+  
+  .modalContainerP .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtnP {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtnP button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainerP .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+    overflow-y: scroll; 
+  }
+  .PartsL-list{
+    justify-content: left;
+    align-items: left;
+    font-size: 0.5 rem;
+    text-align:left;
+    list-style-type: none;
+  }
+  
+  .modalContainerP .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainerP .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }

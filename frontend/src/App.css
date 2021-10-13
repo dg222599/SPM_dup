@@ -1,0 +1,93 @@
+/* .App {
+  background: repeating-linear-gradient(
+    0deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px
+);
+} */
+
+.App {
+  background: repeating-linear-gradient(
+    0deg,
+  rgba(131, 154, 165, 0.8),
+  rgba(131, 154, 165, 0.8) 40px,
+  rgba(131, 154, 165, 0.5) 40px,
+  rgba(131, 154, 165, 0.5) 80px
+  );
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+	--tf-bg: #E7DFDF;
+	--tf-bg-hl: #D0C4C4;
+	--shadow: rgba(0, 0, 0, 0.05);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.btn:focus, .btn:active, .btn:focus:active {
+  box-shadow: initial;
+}
+
+.btn, .btn:hover {
+	color: white;
+}
+
+.modal-card {
+	background-color: white;
+	min-height: 60vh;
+	border-radius: 50px;
+	min-width: fit-content;
+	width: 100%;
+	box-shadow: 15px 15px var(--shadow);
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}

@@ -1,0 +1,21 @@
+.left-items {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #6c6a6ab8;
+}
+.double-items {
+  margin-left: 1234px;
+  max-width: fit-content;
+  align-items: center;
+  padding-right: 0px;
+  background-color: #6c6a6ab8;
+}
+.single-items {
+  margin-left: 1300px;
+  background-color: #6c6a6ab8;
+}
+.navbar {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
