@@ -9,19 +9,18 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      expand="sm"
-      bg="dark"
+      expand="md"
       variant="dark"
-      className="navbar"
+      className="my-nav"
     >
-      <Navbar.Brand href="#home_page" className="left-items">
+      <Navbar.Brand href="#home_page" className="left-items nav-btn">
         <div className="">Logo</div>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className={loggedIn ? "double-items" : "single-items"}>
-          {loggedIn ? <Nav.Link href="/login">Log Out</Nav.Link> : null}
-          <Nav.Link href="/contact">Contact Us</Nav.Link>
+      <Navbar.Collapse className="justify-content-end collapse-bg" id="responsive-navbar-nav">
+        <Nav className="">
+          {loggedIn && <Nav.Link className="mx-1 nav-btn" href="/login">Log Out</Nav.Link>}
+          <Nav.Link className="mx-1 nav-btn" href="/contact">Contact Us</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

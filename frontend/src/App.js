@@ -20,7 +20,7 @@ function App() {
     <div className="App v-100 h-100">
       <Navbar />
 
-      <NotificationContainer />
+      {/* <NotificationContainer /> */}
       <Suspense fallback={<Loader />}>
         <Router>
           <Switch>
